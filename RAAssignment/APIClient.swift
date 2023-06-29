@@ -23,6 +23,35 @@ enum Endpoint {
         }
     }
 }
+
+struct APIClient {
+    func request<D: Decodable>(for endpoint: Endpoint) async throws -> D {
+        let urlRequest = URLRequest(url: endpoint.url)
+
+        let (data, response) = try await URLSession.shared.data(for: urlRequest)
+        let httpResponse = response as? HTTPURLResponse
+
+        guard let statusCode = httpResponse?.statusCode else {
+            throw URLError(.badServerResponse)
+        }
+
+        switch statusCode {
+        case 200..<300:
+            let decoder = JSONDecoder()
+            decoder.keyDecodingStrategy = .convertFromSnakeCase
+            return try decoder.decode(D.self, from: data)
+        case 400:
+            throw URLError(.badURL)
+        case 401:
+            throw HTTPError.unauthorized
+        case 404:
+            throw URLError(.resourceUnavailable)
+        default:
+            throw URLError(.badServerResponse)
+        }
+    }
+}
+
 enum HTTPError: LocalizedError {
     case unauthorized
 
