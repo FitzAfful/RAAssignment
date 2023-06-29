@@ -23,3 +23,12 @@ enum Endpoint {
         }
     }
 }
+enum HTTPError: LocalizedError {
+    case unauthorized
+
+    var errorDescription: String? {
+        switch self {
+        case .unauthorized:  return "Unauthorized"
+        }
+    }
+}
