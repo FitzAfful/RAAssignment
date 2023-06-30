@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84BC476F2A4F59540017F967 /* Preview Content in Resources */ = {isa = PBXBuildFile; fileRef = 84BC476E2A4F59540017F967 /* Preview Content */; };
 		84C8C1CD2A4C688F00EFCB06 /* RAAssignmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C8C1CC2A4C688F00EFCB06 /* RAAssignmentApp.swift */; };
 		84C8C1CF2A4C688F00EFCB06 /* FacilitiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C8C1CE2A4C688F00EFCB06 /* FacilitiesView.swift */; };
 		84C8C1D12A4C689000EFCB06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84C8C1D02A4C689000EFCB06 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		84BC476E2A4F59540017F967 /* Preview Content */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Preview Content"; sourceTree = "<group>"; };
 		84C8C1C92A4C688F00EFCB06 /* RAAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RAAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C8C1CC2A4C688F00EFCB06 /* RAAssignmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RAAssignmentApp.swift; sourceTree = "<group>"; };
 		84C8C1CE2A4C688F00EFCB06 /* FacilitiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacilitiesView.swift; sourceTree = "<group>"; };
@@ -95,7 +97,7 @@
 		84C8C1CB2A4C688F00EFCB06 /* RAAssignment */ = {
 			isa = PBXGroup;
 			children = (
-				84C8C2542A4F524000EFCB06 /* Preview Content */,
+				84BC476E2A4F59540017F967 /* Preview Content */,
 				84C8C1FA2A4C698B00EFCB06 /* APIClient.swift */,
 				84C8C24D2A4F091A00EFCB06 /* Errors.swift */,
 				84C8C1F82A4C68BD00EFCB06 /* Model.swift */,
@@ -143,13 +145,6 @@
 				84C8C2382A4D06AF00EFCB06 /* FacilitiesViewModel.swift */,
 			);
 			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		84C8C2542A4F524000EFCB06 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +228,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84BC476F2A4F59540017F967 /* Preview Content in Resources */,
 				84C8C1D12A4C689000EFCB06 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
