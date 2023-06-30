@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct FacilityOptionView: View {
-    @StateObject var viewModel: FacilitiesViewModel
+    var viewModel: FacilitiesViewModel
     @Binding var option: FacilityOption
     @Binding var facility: Facility
 
