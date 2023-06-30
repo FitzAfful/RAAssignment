@@ -95,13 +95,12 @@
 		84C8C1CB2A4C688F00EFCB06 /* RAAssignment */ = {
 			isa = PBXGroup;
 			children = (
-				84C8C2532A4F4E7F00EFCB06 /* Preview Content */,
+				BBCDEBCA2A4F4F2E0038ECBC /* Preview Content */,
 				84C8C1FA2A4C698B00EFCB06 /* APIClient.swift */,
 				84C8C24D2A4F091A00EFCB06 /* Errors.swift */,
 				84C8C1F82A4C68BD00EFCB06 /* Model.swift */,
 				84C8C2462A4F04FE00EFCB06 /* Views */,
 				84C8C2472A4F052E00EFCB06 /* ViewModels */,
-				84C8C24A2A4F06EF00EFCB06 /* Preview Content */,
 				84C8C1D02A4C689000EFCB06 /* Assets.xcassets */,
 			);
 			path = RAAssignment;
@@ -146,14 +145,7 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
-		84C8C24A2A4F06EF00EFCB06 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		84C8C2532A4F4E7F00EFCB06 /* Preview Content */ = {
+		BBCDEBCA2A4F4F2E0038ECBC /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
 			);
