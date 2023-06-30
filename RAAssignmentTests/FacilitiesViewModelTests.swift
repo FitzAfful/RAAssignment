@@ -110,4 +110,3 @@ final class FacilitiesViewModelTests: XCTestCase {
         super.tearDown()
     }
 }
-

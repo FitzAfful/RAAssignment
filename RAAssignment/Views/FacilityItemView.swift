@@ -28,10 +28,20 @@ struct FacilityItemView: View {
 struct FacilityItemView_Previews: PreviewProvider {
     static var previews: some View {
         let viewModel = FacilitiesViewModel()
-        viewModel.facilities.append(Facility(facilityId: "1", name: "Property Type", options: [FacilityOption(id: "1", name: "Land", icon: "land")]))
+        viewModel.facilities.append(
+            Facility(
+                facilityId: "1",
+                name: "Property Type",
+                options: [FacilityOption(id: "1", name: "Land", icon: "land")]
+            )
+        )
 
         return Group {
-            FacilityItemView(viewModel: viewModel, facility: Binding.constant(viewModel.facilities[0]), facilityIndex: 0)
+            FacilityItemView(
+                viewModel: viewModel,
+                facility: Binding.constant(viewModel.facilities[0]),
+                facilityIndex: 0
+            )
         }
     }
 }

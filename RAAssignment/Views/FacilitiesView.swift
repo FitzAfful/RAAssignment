@@ -33,7 +33,6 @@ struct FacilitiesView: View {
     }
 }
 
-
 struct FacilitiesView_Previews: PreviewProvider {
     static var previews: some View {
         FacilitiesView()

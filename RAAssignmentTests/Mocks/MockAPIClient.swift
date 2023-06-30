@@ -11,7 +11,7 @@ class MockAPIClient: APIClient {
     var shouldSucceed = true
     var mockedResponse: FacilitiesResponse?
 
-    override func request<D>(for endpoint: Endpoint) async throws -> D where D : Decodable {
+    override func request<D>(for endpoint: Endpoint) async throws -> D where D: Decodable {
         if shouldSucceed {
             guard let mockedResponse = mockedResponse as? D else {
                 throw MockError.invalidMockedResponse

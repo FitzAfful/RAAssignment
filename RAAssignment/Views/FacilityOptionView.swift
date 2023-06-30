@@ -37,7 +37,7 @@ struct FacilityOptionView_Previews: PreviewProvider {
         let viewModel = FacilitiesViewModel()
         let facilityOption = FacilityOption(id: "1", name: "Land", icon: "land")
         let facility = Facility(facilityId: "", name: "", options: [])
-        
+
         FacilityOptionView(
             viewModel: viewModel,
             option: Binding.constant(facilityOption),
