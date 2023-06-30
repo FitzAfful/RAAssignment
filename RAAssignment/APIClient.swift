@@ -12,7 +12,7 @@ enum Endpoint {
     var url: URL {
         switch self {
         case .getFacilities:
-            return URL(string: "https://my-json-server.typicode.com/iranjith4/ad-assignment/db")!
+            return URL(string: APIClient.baseURL + "iranjith4/ad-assignment/db")!
         }
     }
 
@@ -24,7 +24,9 @@ enum Endpoint {
     }
 }
 
-struct APIClient {
+class APIClient {
+    static var baseURL = "https://my-json-server.typicode.com/"
+
     func request<D: Decodable>(for endpoint: Endpoint) async throws -> D {
         let urlRequest = URLRequest(url: endpoint.url)
 
@@ -48,16 +50,6 @@ struct APIClient {
             throw URLError(.resourceUnavailable)
         default:
             throw URLError(.badServerResponse)
-        }
-    }
-}
-
-enum HTTPError: LocalizedError {
-    case unauthorized
-
-    var errorDescription: String? {
-        switch self {
-        case .unauthorized:  return "Unauthorized"
         }
     }
 }
